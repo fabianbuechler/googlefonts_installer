@@ -25,7 +25,7 @@ setup(
     long_description=README + '\n\n' + CHANGELOG,
     version=VERSION,
     url='https://github.com/fabianbuechler/googlefonts_installer',
-    license='All rights reserved',
+    license='MIT',
     author='Fabian Büchler',
     author_email='fabian@buechler.io',
     classifiers=[
