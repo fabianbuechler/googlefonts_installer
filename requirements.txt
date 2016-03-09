@@ -6,6 +6,7 @@ pep257
 Pygments
 pytest
 restructuredtext_lint
+twine
 wheel
 
 -e .
