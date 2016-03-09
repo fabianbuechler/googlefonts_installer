@@ -1,0 +1,11 @@
+coverage
+flake8
+ipdb
+ipython
+pep257
+Pygments
+pytest
+restructuredtext_lint
+wheel
+
+-e .

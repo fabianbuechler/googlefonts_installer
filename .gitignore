@@ -1,0 +1,13 @@
+googlefonts.conf
+
+__pycache__/
+*.py[cod]
+env/
+build/
+dist/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+.coverage
+.cache
