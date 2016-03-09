@@ -4,7 +4,7 @@ import os
 from setuptools import setup
 
 # IMPORTANT: follow semantic versioning (SemVer) scheme described at semver.org!
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 
 
 # Runtime requirements.
