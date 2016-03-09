@@ -13,6 +13,7 @@ in your ``~/.fonts`` directory.
     $ pipsi install googlefonts_installer
     $ mkdir -p ~/googlefonts
     $ cd ~/googlefonts
+    $ vim googlefonts.conf
     $ googlefonts-installer
 
 .. _Google fonts directory: https://www.google.com/fonts
@@ -47,9 +48,7 @@ Usage
     You now have the ``googlefonts-installer`` command available.
 
 #.  List the fonts to install, or more precicely the sub-paths of the Google
-    fonts Git repository to clone, in a ``googlefonts.conf`` configuration file:
-
-    ..  code:: none
+    fonts Git repository to clone, in a ``googlefonts.conf`` configuration file::
 
         ufl/ubuntu
         ofl/firamono

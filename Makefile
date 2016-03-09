@@ -1,4 +1,4 @@
-all: flake8 pep257
+all: flake8 pep257 rstlint
 
 # pytest:
 # 	@echo "\n\n### py.test and coverage ###\n"
@@ -28,10 +28,16 @@ pep257:
 	@pep257 ./*.py
 	@echo "✓ pep257 report complete\n"
 
+rstlint:
+	@echo "\n\n### rst lint ###\n"
+	@rst-lint *.rst
+	@echo "✓ rst lint report complete\n"
+
 release:
 	@echo "\n\n### releasing to pypi###\n"
-	@python setup.py sdist bdist_wheel upload
+	@python setup.py sdist bdist_wheel
+	@twine upload dist/*
 	@rm -r build dist
 	@echo "✓ release uploaded.\n"
 
-.PHONY: all flake8 pep257 release
+.PHONY: all flake8 pep257 rstlint release
