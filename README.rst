@@ -73,6 +73,9 @@ Usage / How it works
 
     *   Creates symlinks for each font directory to ``~/.fonts``.
 
+    *   Removes broken symlinks from ``~/.fonts`` for uninstalled (removed from
+        ``googlefonts.conf``) fonts.
+
 .. _pipsi: https://github.com/mitsuhiko/pipsi/
 
 Defaults
