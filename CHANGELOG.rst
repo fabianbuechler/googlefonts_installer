@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.1 - unreleased
+0.3.0 - 2016-03-10
 ------------------
 
 *   Clean up broken symlinks from ``~/.fonts`` after uninstalling a font
