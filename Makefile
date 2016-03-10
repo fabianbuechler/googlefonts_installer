@@ -35,6 +35,7 @@ rstlint:
 
 release:
 	@echo "\n\n### releasing to pypi###\n"
+	@pip install -e .[dev]
 	@python setup.py sdist bdist_wheel
 	@twine upload dist/*
 	@rm -r build dist
