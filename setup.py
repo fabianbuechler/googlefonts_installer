@@ -1,22 +1,26 @@
 """Buchklub WBS (web-order-system)."""
 import os
+import re
 
 from setuptools import setup
 
-# IMPORTANT: follow semantic versioning (SemVer) scheme described at semver.org!
-VERSION = '0.3.0'
+
+# Get __version__ from googlefonts_installer.py.
+here = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(
+        here, 'googlefonts_installer.py'), encoding='utf8') as version:
+    VERSION = re.search(
+        r'^__version__ = [\'"]([^\'"]*)[\'"]',
+        version.read(), re.MULTILINE).group(1)
+# Long description from readme and changelog.
+with open(os.path.join(here, 'README.rst'), encoding='utf8') as readme:
+    README = readme.read()
+with open(os.path.join(here, 'CHANGELOG.rst'), encoding='utf8') as changelog:
+    CHANGELOG = changelog.read()
 
 
 # Runtime requirements.
 requires = []
-
-
-# Long description from readme and changelog.
-here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, 'README.rst')) as fp:
-    README = fp.read()
-with open(os.path.join(here, 'CHANGELOG.rst')) as fp:
-    CHANGELOG = fp.read()
 
 
 setup(

@@ -5,10 +5,8 @@ import subprocess
 import sys
 import textwrap
 
-from pkg_resources import get_distribution
 
-
-__version__ = get_distribution('googlefonts_installer').version
+__version__ = '0.3.1+dev'
 
 
 class GoogleFontInstaller:
