@@ -1,4 +1,4 @@
-all: flake8 pep257 rstlint
+all: flake8 pep257 rst-lint
 
 # pytest:
 # 	@echo "\n\n### py.test and coverage ###\n"
