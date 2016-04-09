@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3.1 - unreleased
+------------------
+
+*   Fix broken source and wheel distributions. Now actually installable.
+
 0.3.0 - 2016-03-10
 ------------------
 

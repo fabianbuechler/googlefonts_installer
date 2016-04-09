@@ -28,14 +28,14 @@ pep257:
 	@pep257 ./*.py
 	@echo "✓ pep257 report complete\n"
 
-rstlint:
-	@echo "\n\n### rst lint ###\n"
+rst-lint:
+	@echo "\n\n### rst-lint ###\n"
 	@rst-lint *.rst
-	@echo "✓ rst lint report complete\n"
+	@echo "✓ rst-lint report complete\n"
 
 release:
 	@echo "\n\n### releasing to pypi###\n"
-	@pip install -e .[dev]
+	@pip install -e .
 	@python setup.py sdist bdist_wheel
 	@twine upload dist/*
 	@rm -r build dist

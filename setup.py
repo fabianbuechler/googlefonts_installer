@@ -19,10 +19,6 @@ with open(os.path.join(here, 'CHANGELOG.rst'), encoding='utf8') as changelog:
     CHANGELOG = changelog.read()
 
 
-# Runtime requirements.
-requires = []
-
-
 setup(
     name='googlefonts_installer',
     description='Google fonts installer utility.',
@@ -44,8 +40,6 @@ setup(
     entry_points={'console_scripts': [
         'googlefonts-installer=googlefonts_installer:main'
     ]},
-    install_requires=requires,
-    include_package_data=True,
-    packages=['.'],
+    py_modules=['googlefonts_installer'],
     zip_safe=False,
 )
